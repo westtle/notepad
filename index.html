@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="author" content="westtle">
+	<meta name="description" content="A notepad you can use...">
+    <meta name="keywords" content="notepad, note app, simple note">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Notepad</title>
+
+    <link rel="icon" type="image/x-icon" href="#">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.min.css">
+</head>
+<body>
+	<main>
+		<div id="notepad">
+			<div class="__tabs">
+				<button class="_tab _tab-tools new-note_" title="Create new note"></button>
+				<button class="_tab _tab-tools delete-note_" data-show-confirm="false" title="Delete current note"></button>
+				<button class="_tab _tab-tools confirm-delete_" title="Confirm remove" tabindex="-1"></button>
+			</div>
+			<div class="__note">
+				<div class="_title">
+					<input type="text" placeholder="Title...">
+				</div>
+				<div class="_body">
+					<textarea data-enable-wrap="false" placeholder="Your text here..."></textarea>
+					<span class="action-message_">Saved...</span>
+				</div>
+			</div>
+			<div class="__tools">
+				<div>
+					<button class="_tool cut_" title="Cut selected"></button>
+					<button class="_tool copy_" title="Copy selected"></button>
+					<button class="_tool paste_" title="Paste"></button>
+					<button class="_tool delete_" title="Delete selected"></button>
+				</div>
+					<button class="_tool wrap_" data-enable-wrap="false" title="Enable text wrapping">w</button>
+				<div>
+					<button class="_tool select-all_" title="Select all"></button>
+					<button class="_tool zoom-in_" title="Zoom-In"></button>
+					<button class="_tool zoom-out_" title="Zoom-out"></button>
+					<button class="_tool download_" title="Download current note"></button>
+				</div>
+			</div>
+		</div>
+		<div id="notice">
+			Repository: <a href="https://github.com/westtle/notepad" target="_blank">https://github.com/westtle/notepad</a>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="assets/scripts/script.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/tools.min.js"></script>
+</body>
+</html>
